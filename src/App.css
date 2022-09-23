@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  height: 50px;
+  margin: 20px;
+}
+
+nav {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  display: flex;
+}
+
+.hero {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero > img {
+  max-width: 1000px;
+  align-self: center;
+}
+
+.hero--title {
+  margin: 20px;
+}
+
+.hero--text {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.card {
+  margin: 10px;
+  position: relative;
+}
+.card--image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.card--title {
+  max-width: 200px;
+}
+
+.stars span {
+  color: gray;
+}
+
+.card--overlay {
+position: absolute;
+color: rgb(0, 0, 0);
+background-color: white;
+border-radius: 10px;
+padding: 5px;
+top: 5px;
+left: 5px;
+}
+
+.card--rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.star-image {
+  width: 15px;
+  align-self: center;
+}
+
+.app--cards {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
