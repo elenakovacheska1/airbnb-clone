@@ -10,8 +10,8 @@ body {
 }
 
 #logo {
-  height: 50px;
-  margin: 20px;
+  height: 3.125em;
+  margin: 1.25em;
 }
 
 nav {
@@ -20,38 +20,41 @@ nav {
 }
 
 .hero {
-  margin-top: 50px;
+  margin-top: 3.125em;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
 .hero > img {
-  max-width: 1000px;
+  max-width: 62.5em;
+  width: 90%;
+  object-fit: cover;
   align-self: center;
 }
 
-.hero--title {
-  margin: 20px;
+.hero--title, 
+.card {
+  margin: 1.25em auto;
 }
 
 .hero--text {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  width: 300px;
+  width: 18.75em;
+  margin: 0 auto;
 }
 
 .card {
-  margin: 10px;
   position: relative;
 }
+
 .card--image {
-  width: 200px;
+  width: 12.5em;
   border-radius: 10px;
 }
 
 .card--title {
-  max-width: 200px;
+  max-width: 12.5em;
+  padding: 5px 0;
 }
 
 .stars span {
@@ -63,9 +66,9 @@ position: absolute;
 color: rgb(0, 0, 0);
 background-color: white;
 border-radius: 10px;
-padding: 5px;
-top: 5px;
-left: 5px;
+padding: 0.3125em;
+top: 0.3125em;
+left: 0.3125em;
 }
 
 .card--rating {
@@ -74,12 +77,23 @@ left: 5px;
 }
 
 .star-image {
-  width: 15px;
+  width: 0.9375em;
   align-self: center;
 }
 
 .app--cards {
-  margin: 20px;
+  margin: 1.25em;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .hero,
+  .card {
+    margin: 4em auto;
+  }
+  .hero--text {
+    width: 100%;
+    text-align: center;
+  }
 }
